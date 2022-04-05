@@ -1,0 +1,21 @@
+@mixin f-Hurricane {
+  font-family: "Hurricane", cursive;
+}
+.footer__wrapper {
+  justify-content: flex-start;
+  margin-left: 80px;
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social {
+  @include f-Hurricane;
+  font-size: 25px;
+}
+.footer__icons {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,164 @@
+.footer__wrapper {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 80px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social {
+  font-family: "Hurricane", cursive;
+  font-size: 25px;
+}
+
+.footer__icons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.h-gap {
+  gap: 50px;
+}
+
+.app {
+  margin: 30px 20px;
+}
+
+.home__link {
+  font-family: "Hurricane", cursive;
+  font-size: 16px;
+}
+
+.header__wrapper {
+  text-align: center;
+  line-height: 20px;
+  font-family: "Hurricane", cursive;
+}
+
+.main {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.circle {
+  background: -webkit-gradient(linear, left top, right top, from(#3f87a6), color-stop(#ebf8e1), to(#f69d3c));
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  border-bottom-left-radius: 100px;
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.photo {
+  margin-left: 105px;
+  margin-top: 30px;
+  overflow: hidden;
+  display: block;
+  width: 150px;
+}
+
+.main-img {
+  border-top-left-radius: 90px;
+  border: solid 2px white;
+}
+
+.main-text {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+  margin-left: 70px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px;
+}
+
+.main-text__item {
+  padding-right: 10px;
+}
+
+.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fa-circle,
+.fa-circle-o {
+  font-size: 6px;
+}
+
+.name__wrapper {
+  margin-left: 100px;
+}
+
+.name__data {
+  font-family: "Hurricane", cursive;
+}
+
+.main-text_modification {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.main-text__data_font {
+  color: #708090;
+  line-height: 15px;
+}
+/*# sourceMappingURL=index.css.map */

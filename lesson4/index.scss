@@ -1,0 +1,85 @@
+//! Main styles
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+//! Home link style
+
+.home {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.home__link {
+  font-family: "Hurricane", cursive;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+//! Header styles
+
+header {
+  text-align: center;
+  padding: 0 20px;
+}
+
+//! Main-block styles
+
+.main {
+  flex-direction: column;
+  margin-left: 100px;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 16px;
+  display: flex;
+  gap: 50px;
+}
+.main__icons {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  width: 45px;
+}
+
+.main__pic {
+  margin-top: 30px;
+  width: 70%;
+}
+
+// Helper
+
+.h-font {
+  font-weight: bolder;
+}
+
+.video {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+//! Button UP style
+
+button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #3b3f45;
+  width: 100%;
+}
+
+.home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.home__link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ff8984;
+  font-size: 10px;
+}
+
+.header__wrapper {
+  background-color: #4a4f56;
+  height: 82px;
+  width: 100%;
+}
+
+.header__title {
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 19px 4px 4px;
+  color: #ff8984;
+  margin: 0;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ff8984;
+  text-align: center;
+}
+
+.shop-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop-list__item {
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #7a7593;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 21px;
+  min-width: 534px;
+  min-height: 45px;
+  color: #fff;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shop-list__item:hover {
+  background-color: #625e77;
+  border: solid 2px #fff;
+  border-left: none;
+  border-right: none;
+}
+
+.shop-list__item:active {
+  background-color: #ff8984;
+}
+
+.shop-list__item_mod {
+  background-color: #88839e;
+  text-align: center;
+}
+
+.custom-checkbox {
+  height: 19px;
+  margin: 12px;
+  width: 19px;
+}
+
+.custom-checkbox:checked + label {
+  text-decoration: line-through;
+}
+
+.description {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 100%;
+}
+
+.description > span {
+  padding-left: 3px;
+  line-height: 12px;
+  font-size: 11px;
+}
+
+.description_mod::after {
+  content: ")";
+}
+
+.description_mod::before {
+  content: "(";
+}
+
+.end-block__wrapper {
+  background-color: #4a4f56;
+  text-align: center;
+  min-height: 45px;
+  margin: 45px auto;
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ff8984;
+  line-height: 21px;
+  font-size: 18px;
+  padding: 12px;
+  width: 534px;
+}
+/*# sourceMappingURL=index.css.map */

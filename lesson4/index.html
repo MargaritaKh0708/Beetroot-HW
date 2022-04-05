@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4</title>
+    <!-- Favicon -->
+    <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hurricane&amp;family=Montserrat:wght@600&amp;family=Roboto:wght@400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="../lesson2/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Styles -->
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+
+    <!-- Local styles -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- All content container -->
+    <div class="app">
+      <!-- Link to the Home page -->
+      <div class="home">
+        <a class="home__link" href="../index.html"
+          ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> HOME
+          WORKS LIST</a
+        >
+      </div>
+
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__title">
+          <a name="up"></a>Семантика, посилання і HTML5 теги
+        </h1>
+      </header>
+
+      <!-- Main text block -->
+      <section class="main">
+        <h2 class="main__title">HTML5 Семантичні елементи</h2>
+
+        <!-- First article -->
+        <article class="main__article">
+          <p class="main__article-item">
+            Семантичний елемент чітко описує його значення як для браузера, так
+            і для розробника.
+          </p>
+          <p class="main__article-item">
+            Приклади <span class="h-font">не семантичних елементів</span> :
+            &lt;div&gt; і &lt;span&gt; - нічого не говорить про його вміст.
+          </p>
+          <p class="main__article-item">
+            Приклади
+            <span class="h-font">семантичних елементів</span> елементів:
+            &lt;fоrm&gt;, &lt;tаble&gt; і &lt;articlе&gt; - чітко визначає його
+            зміст.
+          </p>
+        </article>
+
+        <!-- Second article -->
+        <article class="main__article">
+          <h3>Підтримка браузерів</h3>
+          <div class="main__icons">
+            <img src="./pic/chrome.png" alt="" />
+            <img src="./pic/edge.png" alt="" />
+            <img src="./pic/ffox.png" alt="" />
+            <img src="./pic/opera.png" alt="" />
+            <img src="./pic/safri.png" alt="" />
+          </div>
+          <p class="main__article-item">
+            Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+          </p>
+          <p class="main__article-item">
+            Крім того, ви можете "навчити" старих браузерів, як обробляти
+            "невідомі елементи".
+          </p>
+          <p class="main__article-item">
+            Прочитайте про це
+            <a href="https://www.blogger.com/dashboard/reading">
+              в підтримці браузера HTML5 .</a
+            >
+          </p>
+        </article>
+
+        <!-- Third article -->
+        <article class="main__article">
+          <h3 class="main__title">Нові семантичні елементи в HTML5</h3>
+          <p class="main__article-item">
+            HTML5 пропонує нові семантичні елементи для визначення різних частин
+            веб-сторінки:
+          </p>
+          <!-- Anchors -->
+          <ul class="main__article-list">
+            <li><a href="#section">&lt;section&gt;</a></li>
+            <li><a href="#article">&lt;article&gt;</a></li>
+            <li><a href="#header">&lt;header&gt;</a></li>
+            <li><a href="#footer">&lt;footer&gt;</a></li>
+          </ul>
+        </article>
+
+        <!-- 4th article -->
+        <article class="main__article">
+          <h3 class="main__title">
+            <a name="section"></a>HTML5 &lt;section&gt; елемент
+          </h3>
+          <p class="main__article-item">
+            Елемент &lt;section&gt; визначає розділ в документі.
+          </p>
+          <p class="main__article-item">
+            Згідно з документацією HTML5: "розділ представляє собою тематичну
+            угруповання контенту, зазвичай з заголовком".
+          </p>
+          <p class="main__article-item">
+            Домашня сторінка зазвичай може бути розділена на розділи для
+            ознайомлення, змісту і контактної інформації.
+          </p>
+          <div class="main__pic">
+            <img src="./pic/Screenshot4.png" alt="" class="main__pic-item" />
+          </div>
+        </article>
+
+        <!-- 5th article -->
+        <article class="main__article">
+          <h3 class="main__title">
+            <a name="article"></a>HTML5 &lt;article&gt; елемент
+          </h3>
+          <p class="main__article-item">
+            Елемент &lt;article&gt; визначає незалежний, автономний вміст.
+          </p>
+          <p class="main__article-item">
+            Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+            читати його незалежно від іншої частини веб-сайту.
+          </p>
+          <p class="main__article-item">
+            Приклади того, де можна використовувати елемент &lt;article&gt;:
+          </p>
+          <ul class="main__article-list">
+            <li>Повідомлення на форумі</li>
+            <li>Публікації у блозі</li>
+            <li>Газетна стаття</li>
+          </ul>
+          <div class="main__pic">
+            <img src="./pic/Screenshot3.png" alt="" class="main__pic-item" />
+          </div>
+        </article>
+
+        <!--  6th article -->
+        <article class="main__article">
+          <h3 class="main__title">
+            <a name="header"></a>HTML5 &lt;header&gt; елемент
+          </h3>
+          <p class="main__article-item">
+            Елемент &lt;header&gt; задає заголовок для документа або розділу.
+          </p>
+          <p class="main__article-item">
+            Елемент &lt;header&gt; повинен використовуватися в якості контейнера
+            для вступного змісту.
+          </p>
+          <p class="main__article-item">
+            В одному документі може бути кілька елементів &lt;header&gt;
+          </p>
+          <p class="main__article-item">
+            У наступному прикладі визначається заголовок для статті:
+          </p>
+          <div class="main__pic">
+            <img src="./pic/Screenshot2.png" alt="" class="main__pic-item" />
+          </div>
+        </article>
+
+        <!-- 7th article -->
+        <article class="main__article">
+          <h3 class="main__title">
+            <a name="footer"></a>HTML5 &lt;footer&gt; елемент
+          </h3>
+          <p class="main__article-item">
+            Елемент &lt;footer&gt; вказує нижній колонтитул для документа або
+            розділу.
+          </p>
+          <p class="main__article-item">
+            Нижній колонтитул зазвичай містить автора документа, інформацію про
+            авторське право, посилання на умови використання, контактні дані і
+            т.д.
+          </p>
+          <p class="main__article-item">
+            В одному документі може бути кілька елементів &lt;footer&gt;
+          </p>
+          <div class="main__pic">
+            <img src="./pic/screenshot1.png" alt="" class="main__pic-item" />
+          </div>
+        </article>
+      </section>
+
+      <!-- Video -->
+      <section class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/FII4DRuiLLI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- Up Button -->
+      <button class="up"><a href="#up">ВГОРУ</a></button>
+    </div>
+  </body>
+</html>

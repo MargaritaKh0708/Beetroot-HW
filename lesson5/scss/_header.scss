@@ -1,0 +1,47 @@
+.header__wrapper {
+  padding-top: 24px;
+}
+.home__link {
+  @include f-type;
+  color: $c-gray;
+  font-size: 10px;
+}
+.nav {
+  @include f-type;
+  color: $c-gray;
+  font-size: 16px;
+}
+
+.home {
+  padding-left: 15px;
+}
+
+.nav__menu {
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+}
+
+.nav__item {
+  text-shadow: 0px 5px 0px $c-lightgray;
+}
+
+.nav__href {
+  color: $c-gray;
+}
+
+.nav__href:hover,
+.nav__item:hover {
+  color: $c-black;
+  text-shadow: none;
+}
+
+.line {
+  box-shadow: 1px 5px 3px 2px $c-lightgray;
+  border-bottom: solid 1px $c-gray;
+  margin: 30px auto 0 auto;
+  max-width: 940px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}

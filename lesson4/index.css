@@ -1,0 +1,87 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+.home {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.home__link {
+  font-family: "Hurricane", cursive;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+header {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.main__icons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 45px;
+}
+
+.main__pic {
+  margin-top: 30px;
+  width: 70%;
+}
+
+.h-font {
+  font-weight: bolder;
+}
+
+.video {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+/*# sourceMappingURL=index.css.map */

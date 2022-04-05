@@ -1,0 +1,19 @@
+.about__wrapper {
+  background-color: $c-lightgray;
+  text-align: center;
+  @include f-type;
+  line-height: 24px;
+  font-size: 18px;
+  height: 500px;
+}
+
+.about__title {
+  padding-top: 100px;
+}
+.about__text {
+  margin-top: 28px;
+}
+
+.about__text_mod {
+  margin: 0;
+}

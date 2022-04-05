@@ -1,0 +1,17 @@
+.name__wrapper {
+  margin-left: 100px;
+}
+
+.name__data {
+  @include f-Hurricane;
+}
+
+.main-text_modification {
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.main-text__data_font {
+  color: $c-gray;
+  line-height: 15px;
+}

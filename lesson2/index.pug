@@ -1,0 +1,61 @@
+include ./pug/main-textblock
+include ./pug/footer
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Resume
+        link(type="image/x-icon" href="../favicon.ico" rel="shortcut icon")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+        link(rel="stylesheet", href="index.css")
+    body 
+        .app 
+            div.home
+                a.home__link(href="../index.html") <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> HOME WORKS LIST
+            header.header 
+                .header__wrapper 
+                    h1 R E S U M E 
+            section.main.h-border
+                .main__pic 
+                        .circle
+                        .photo: img.main-img(src="./pic/photo2.jpg")
+                        .name__wrapper 
+                                h2.name__data Margarita Khyzhnyak
+                section.main-text.h-gap
+                    .main-text__item
+                        h2 Інтереси
+                        ul.main-text__list
+                            li.main-text__data <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Психологія, саморозвиток 
+                            li.main-text__data <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Спорт
+                            li.main-text__data <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Музика  
+                            li.main-text__data <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Подорожі
+                        h2 Мови
+                        .languages
+                            ul.languages__text
+                                li.main-text__data Українська 
+                                li.main-text__data Російська    
+                                li.main-text__data English
+                            ul.languages__icon  
+                                li <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="false"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i>                    
+                                li <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="false"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i>                    
+                                li <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="false"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle-o" aria-hidden="true"></i> <i class="fa fa-circle-o" aria-hidden="true"></i>     
+                    .main-text__item 
+                        h2  Особисті дані
+                        ul.main-text__list 
+                            li.main-text__data <i class="fa fa-address-book-o" aria-hidden="true"></i> Адреса
+                            li.main-text__data.main-text__data_font вул. Ушакова, буд. 30, кв. 6, Херсон, Україна
+                            li.main-text__data <i class="fa fa-phone" aria-hidden="true"></i> Номер телефону
+                            li.main-text__data.main-text__data_font +3 8 073 221 46 41
+                            li.main-text__data <i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail 
+                            li.main-text__data.main-text__data_font khyzhnyak.margarita@gmail.com
+                            li.main-text__data <i class="fa fa-birthday-cake" aria-hidden="true"></i> Дата народження
+                            li.main-text__data.main-text__data_font 07-08-1990   
+            +main-textblock()
+            +simple-text()

@@ -1,0 +1,35 @@
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  cursor: default;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+label:before {
+  content: " ";
+  color: #000;
+  height: 19px;
+  margin: 12px;
+  width: 19px;
+  display: inline-block;
+
+  text-align: center;
+
+  background: #fff;
+  border: 1px solid #e3e3e3;
+
+  vertical-align: middle;
+}
+
+input:checked + label:before {
+  content: "U+2713";
+}
+
+input:disabled + label:before {
+  background: #eee;
+  color: #aaa;
+}

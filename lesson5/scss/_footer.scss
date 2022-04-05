@@ -1,0 +1,60 @@
+.footer__wrapper {
+  height: 670px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer__title {
+  padding-bottom: 20px;
+  padding-top: 100px;
+  text-align: center;
+  @include f-type-large;
+}
+.footer__subtitle {
+  text-align: center;
+  @include f-type;
+  max-width: 276px;
+  margin: 0 auto;
+}
+
+.footer__button {
+  margin: 86px auto 0 auto;
+  width: 180px;
+  height: 42px;
+}
+.sent-button {
+  background-color: $c-black;
+  border-color: $c-black;
+  @include f-type-large;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+  line-height: 25px;
+  color: $c-white;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.social__pic {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.footer__social {
+  justify-content: center;
+  margin-top: 46px;
+  display: flex;
+  gap: 60px;
+}
+
+.social__text {
+  margin: 44px auto 0 auto;
+  @include f-type;
+
+  text-align: center;
+  line-height: 19px;
+  max-width: 276px;
+  color: $c-gray;
+  font-size: 14px;
+}

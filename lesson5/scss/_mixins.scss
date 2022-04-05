@@ -1,0 +1,13 @@
+@mixin f-type {
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@mixin f-type-large {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 64px;
+}

@@ -1,0 +1,138 @@
+@mixin f-Roboto-large {
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@mixin f-Roboto-normal {
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+}
+//? Header styles
+
+// Home link style
+.home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.home__link {
+  text-decoration: none;
+  @include f-Roboto-normal;
+  color: $c-lightred;
+  font-size: 10px;
+}
+
+//Title style
+
+.header__wrapper {
+  background-color: $c-brown;
+  height: 82px;
+  width: 100%;
+}
+
+.header__title {
+  @include f-Roboto-large;
+  padding: 19px 4px 4px;
+  color: $c-lightred;
+  margin: 0;
+  text-align: center;
+}
+
+.header__subtitle {
+  @include f-Roboto-normal;
+  color: $c-lightred;
+  text-align: center;
+}
+
+//? Shop-list styles
+
+.shop-list {
+  flex-direction: column;
+  align-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shop-list__item {
+  @include f-Roboto-normal;
+  background-color: $c-violet;
+  align-items: center;
+  line-height: 21px;
+  min-width: 534px;
+  min-height: 45px;
+  color: $c-white;
+  font-size: 18px;
+  display: flex;
+}
+
+//! Change color and borders after hover
+
+.shop-list__item:hover {
+  background-color: $c-darkviolet;
+  border: solid 2px $c-white;
+  border-left: none;
+  border-right: none;
+}
+
+//! Change color after its active
+
+.shop-list__item:active {
+  background-color: $c-lightred;
+}
+
+//? Modificator
+
+.shop-list__item_mod {
+  background-color: $c-lightviolet;
+  text-align: center;
+}
+
+.custom-checkbox {
+  height: 19px;
+  margin: 12px;
+  width: 19px;
+}
+
+.custom-checkbox:checked + label {
+  text-decoration: line-through;
+}
+
+.description {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  width: 100%;
+}
+.description > span {
+  padding-left: 3px;
+  line-height: 12px;
+  font-size: 11px;
+}
+
+//! Add "(" and ")" for the part of label text
+
+.description_mod::after {
+  content: ")";
+}
+.description_mod::before {
+  content: "(";
+}
+
+.end-block__wrapper {
+  background-color: $c-brown;
+  text-align: center;
+  min-height: 45px;
+  margin: 45px auto;
+  @include f-Roboto-normal;
+  color: $c-lightred;
+  line-height: 21px;
+  font-size: 18px;
+  padding: 12px;
+  width: 534px;
+}

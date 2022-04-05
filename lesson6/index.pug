@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Lesson 6
+        link(type="image/x-icon" href="../favicon.ico" rel="shortcut icon")
+        link(rel="stylesheet" href="../lesson2/font-awesome-4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+        link(rel="stylesheet", href="index.css")
+    body 
+        .app 
+            header.header 
+                .header__wrapper 
+                    <div class="home"> <a class="home__link" href="../index.html"> <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> HOME WORKS LIST</a> </div> 
+                    h1.header__title CSS Dinner Shopping List
+                    div.header__subtitle 
+                        span Let’s go to the mall!
+            form(action="#", method="get") 
+                .shop-list
+                    .shop-list__item.shop-list__item_mod
+                        input(type="checkbox" class="custom-checkbox" id="pickles" name="pickles" )
+                        label(for="pickles" class='description') A lot of pickles
+                            span.description_mod for the next lessons about CSS
+                    .shop-list__item 
+                        input(type="checkbox" class="custom-checkbox" id="apples" name="apples" )
+                        label(for="apples" class='description') 10 apples
+                            span.description_mod  for more CSS manipulations
+                    .shop-list__item.shop-list__item_mod   
+                        input(type="checkbox" class="custom-checkbox" id="oranges" name="oranges" )
+                        label(for="oranges" class='description') 20 oranges
+                            span.description_mod  because they are awesome
+                    .shop-list__item     
+                        input(type="checkbox" class="custom-checkbox" id="plates" name="plates" )
+                        label(for="plates" class='description') 13 plates
+                            span.description_mod hm... they always dissapear
+                    .shop-list__item   
+                        input(type="checkbox" class="custom-checkbox" id="bentos" name="bentos" )
+                        label(for="bentos" class='description') 15 bentos
+                    .shop-list__item     
+                        input(type="checkbox" class="custom-checkbox" id="sake" name="sake" )
+                        label(for="sake" class='description') 1 bottle of Sake
+                            span.description_mod  for my friends
+            .end-block 
+                .end-block__wrapper 
+                    span Bon appetit :)

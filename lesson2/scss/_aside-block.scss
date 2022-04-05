@@ -1,0 +1,66 @@
+.app {
+  margin: 30px 20px;
+}
+.home__link {
+  @include f-Hurricane;
+  font-size: 16px;
+}
+.header__wrapper {
+  text-align: center;
+  line-height: 20px;
+  @include f-Hurricane;
+}
+
+.main {
+  justify-content: flex-start;
+  margin-left: 60px;
+  display: flex;
+}
+
+.circle {
+  background: linear-gradient(0.25turn, $c-blue, $c-lemon, $c-orange);
+  border-bottom-left-radius: 100px;
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.photo {
+  margin-left: 105px;
+  margin-top: 30px;
+  overflow: hidden;
+  display: block;
+  width: 150px;
+}
+
+.main-img {
+  border-top-left-radius: 90px;
+  border: solid 2px white;
+}
+
+.main-text {
+  justify-content: space-between;
+  align-items: flex-start;
+  @include f-Montserrat;
+  line-height: 30px;
+  margin-left: 70px;
+  font-size: 10px;
+  display: flex;
+  padding: 0 10px;
+}
+
+.main-text__item {
+  padding-right: 10px;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-circle,
+.fa-circle-o {
+  font-size: 6px;
+}

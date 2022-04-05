@@ -1,0 +1,41 @@
+//Header styles
+.header {
+  width: 100%;
+  background: linear-gradient($c-white 60%, $c-silver);
+  border-radius: 100px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include Hurricane-font;
+}
+
+// Main block styles
+.main__wrapper {
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+a:hover {
+  text-shadow: 1px 1px 2px $c-gray;
+}
+
+.main__item {
+  @include Hurricane-font;
+  font-size: 40px;
+}
+.main__href {
+  @include Noto-font;
+}

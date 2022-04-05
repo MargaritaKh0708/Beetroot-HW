@@ -1,0 +1,36 @@
+.portfolio__wrapper {
+  background-color: $c-lightgray;
+  height: fit-content;
+  align-items: center;
+  margin: 0 auto;
+  @include f-type;
+}
+
+.portfolio__content {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+.portfolio__title {
+  padding: 118px 0 68px 0;
+  text-align: center;
+}
+.portfolio__item {
+  flex-direction: column;
+  margin-bottom: 166px;
+  align-items: center;
+  display: flex;
+}
+.portfolio__img {
+  max-width: 940px;
+  width: 100%;
+}
+
+.portfolio__text {
+  text-align: center;
+}
+
+.portfolio__href {
+  color: $c-black;
+  text-decoration: underline;
+}
