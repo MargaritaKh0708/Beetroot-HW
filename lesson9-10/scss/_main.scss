@@ -6,10 +6,17 @@
 
 body {
   background-color: $c-creamy;
-  max-width: 1400px;
+  max-width: 1430px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
 }
 
 img {
   width: 100%;
+}
+
+.app {
+  margin-right: 130px;
+  margin-left: 130px;
 }

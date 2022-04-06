@@ -1,0 +1,74 @@
+.tools__wrapper {
+  margin-top: 110px;
+}
+.tools__title {
+  @include f-Poppins-700;
+  text-align: center;
+  padding: 5px 15px;
+  line-height: 54px;
+  font-size: 36px;
+  margin: 0 auto;
+  width: 539px;
+}
+.tools__list {
+  justify-content: space-between;
+  display: flex;
+  gap: 43px;
+}
+
+.card__shadow {
+  position: relative;
+  height: 30px;
+  width: 50px;
+  opacity: 0.2;
+  top: 50px;
+}
+.card-pic {
+  border-radius: 19px;
+  width: 50px;
+  height: 50px;
+}
+.card-pic__wrapper {
+  position: relative;
+  margin: 0 auto;
+  height: 18px;
+  width: 14px;
+  top: 15px;
+}
+
+.card__title {
+  @include f-Poppins-600;
+  margin-bottom: 13px;
+  padding: 5px 0;
+  line-height: 33px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+//! Helpers
+
+.h-violet {
+  background-color: $c-violet;
+}
+
+.h-orange {
+  background-color: $c-orange;
+}
+
+.h-red {
+  background-color: $c-red;
+}
+
+.h-blue {
+  background-color: $c-blue;
+}
+.card__text {
+  @include f-Poppins-400;
+  color: $c-lightbrown;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.tools__button {
+  text-align: center;
+  margin-top: 34px;
+}
