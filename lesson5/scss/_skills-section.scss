@@ -19,6 +19,10 @@
   max-width: 940px;
   display: flex;
   width: 100%;
+
+  @media screen and (max-width: 520px) {
+    flex-direction: column;
+  }
 }
 
 .cards__item {
@@ -27,6 +31,12 @@
   align-items: center;
   display: flex;
   gap: 28px;
+}
+
+.languages__icon {
+  @media screen and (max-width: 520px) {
+    margin-top: 15px;
+  }
 }
 
 .cards__img {

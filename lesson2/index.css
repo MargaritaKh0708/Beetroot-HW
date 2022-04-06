@@ -83,6 +83,18 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 790px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
 .circle {
   background: -webkit-gradient(linear, left top, right top, from(#3f87a6), color-stop(#ebf8e1), to(#f69d3c));
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
