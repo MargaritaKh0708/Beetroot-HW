@@ -195,7 +195,7 @@ h1 {
 }
 
 @media screen and (max-width: 520px) {
-  .languages__icon {
+  .cards__item {
     margin-top: 15px;
   }
 }
