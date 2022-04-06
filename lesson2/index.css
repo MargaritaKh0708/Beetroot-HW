@@ -149,6 +149,12 @@ a {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 520px) {
+  .languages__icon {
+    margin-top: 15px;
+  }
+}
+
 .fa-circle,
 .fa-circle-o {
   font-size: 6px;

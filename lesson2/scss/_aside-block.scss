@@ -64,6 +64,11 @@
   display: flex;
   justify-content: space-between;
 }
+.languages__icon {
+  @media screen and (max-width: 520px) {
+    margin-top: 15px;
+  }
+}
 
 .fa-circle,
 .fa-circle-o {
