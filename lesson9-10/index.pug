@@ -1,6 +1,7 @@
 include ./components/header
 include ./components/design-block
 include ./components/tools-block
+include ./components/footer
 
 doctype html
 html(lang="en")
@@ -9,7 +10,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Lesson 9-10
-        link(type="image/x-icon" href="favicon.ico" rel="shortcut icon")
+        link(type="image/x-icon" href="../favicon.ico" rel="shortcut icon")
         link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -20,3 +21,4 @@ html(lang="en")
             +header()
             +design()
             +tools()
+            +footer()

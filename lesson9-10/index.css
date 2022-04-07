@@ -19,8 +19,7 @@ img {
 }
 
 .app {
-  margin-right: 130px;
-  margin-left: 130px;
+  margin: 0 130px 83px 130px;
 }
 
 .header__wrapper {
@@ -81,6 +80,11 @@ img {
   gap: 24px;
 }
 
+.nav__item > a {
+  text-decoration: none;
+  color: #2f281e;
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +122,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .design-block__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .design-block__content {
@@ -174,9 +187,9 @@ img {
   content: "►";
 }
 
-.design-block__pic {
-  width: 470px;
-  height: auto;
+.design-block_svg {
+  width: 600px;
+  height: 494px;
 }
 
 .tools__wrapper {
@@ -263,5 +276,72 @@ img {
 .tools__button {
   text-align: center;
   margin-top: 34px;
+}
+
+.footer__wrapper {
+  border-top: solid 1px #bcd0e5;
+  margin: 146px auto 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer__logo {
+  margin-top: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 140px;
+  margin-top: 167px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 81px;
+}
+
+.footer__item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 175px;
+}
+
+.footer__list {
+  list-style-type: none;
+}
+
+.footer__listitem > a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 16px;
+  color: #2f281e;
+}
+
+.footer__forms {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+.h-size {
+  width: 131px;
+  height: 39px;
 }
 /*# sourceMappingURL=index.css.map */
