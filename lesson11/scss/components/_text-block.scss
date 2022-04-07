@@ -1,0 +1,68 @@
+//? Main text block style
+
+.text-block__wrapper {
+  margin-top: 66px;
+}
+
+//? Text blocks style
+
+.text-block__list {
+  flex-direction: column;
+  display: flex;
+  gap: 92px;
+}
+
+.text-block__item {
+  border-bottom: solid 1px $c-gray;
+  list-style-type: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 5px;
+  display: block;
+  height: 50px;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.text-block__item:focus {
+  height: auto;
+}
+
+//? Text style
+
+.text-block_num {
+  @include f-Roboto-400;
+  vertical-align: 14px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.text-block__title {
+  text-transform: uppercase;
+  @include f-Roboto-900;
+  line-height: 42px;
+  font-size: 36px;
+  padding: 5px;
+}
+
+.text-block__main {
+  @include f-PTSans-400;
+  text-align: justify;
+  line-height: 48px;
+  margin-top: 40px;
+  font-size: 36px;
+}
+
+//! Helpers
+.h-decor-underline {
+  text-decoration: underline;
+}
+
+.h-decor-bold {
+  @include f-Roboto-700;
+}
+
+.h-decor-background {
+  background-color: $c-gray;
+}

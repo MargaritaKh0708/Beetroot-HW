@@ -1,0 +1,53 @@
+//! Main header style
+
+.header__wrapper {
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 18px;
+  display: flex;
+  height: 68px;
+  width: 100%;
+}
+
+//! Header text part style
+
+.header__text {
+  align-items: flex-end;
+  padding: 5px 10px;
+  padding-top: 32px;
+  display: flex;
+  gap: 42px;
+}
+
+//! Language icon style
+.header__language {
+  font-family: "Roboto", sans-serif;
+  line-height: 23px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.header__href {
+  -webkit-text-stroke-color: $c-black;
+  -webkit-text-stroke-width: 1px;
+  color: $c-white;
+}
+
+//! Header way text style
+
+.header__docway {
+  font-family: "Roboto", sans-serif;
+  line-height: 23px;
+  font-weight: 400;
+  font-size: 20px;
+}
+//! Header logo style
+
+.header__logo {
+  padding-right: 39px;
+}
+
+.icon {
+  width: 243px;
+  height: 50px;
+}

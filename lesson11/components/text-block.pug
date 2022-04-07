@@ -1,0 +1,26 @@
+mixin text-block 
+    section.text-block 
+                .text-block__wrapper 
+                    ul.text-block__list 
+                        li.text-block__item(tabindex="0")
+                            span.text-block_num 1 
+                            span.text-block__title Introduction 
+                            p.text-block__main Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <span class="h-decor-underline"> their own section</span>. Continue reading for an introduction to the documentation, Native Components, React, and more!
+                        li.text-block__item(tabindex="0")
+                            span.text-block_num 2 
+                            span.text-block__title Core Components
+                            p.text-block__main React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabilities. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: bundles of reusable, nestable code. You can learn more about React in the next section. But first, let’s cover how components work in React Native.
+                        li.text-block__item(tabindex="0")
+                            span.text-block_num 3 
+                            span.text-block__title React Fundamentals 
+                            p.text-block__main React Native runs on <span class="h-decor-underline"> React </span>, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course.
+                            p.text-block__main We’re going to cover the core concepts behind React:
+                            p.text-block__main <span class="h-decor-bold">+ components. </span> The rest of this introduction to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to work in.
+                            p.text-block__main <span class="h-decor-bold">+ JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so: <span class="h-decor-background">  &lt;Text&gt;Hello, I am your cat! &lt;/Text&gt; </span>. The React docs have <span class="h-decor-underline"> a comprehensive guide to JSX </span> you can refer to learn even more. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a <span class="h-decor-background"> name </span> for the cat, name, and embedding it with curly braces inside <span class="h-decor-background">&lt;Text&gt;. </span>
+                            p.text-block__main <span class="h-decor-bold">+ props.</span> Props is short for “properties”. 
+                            p.text-block__main <span class="h-decor-bold">+ state.</span> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
+                        li.text-block__item(tabindex="0")
+                            span.text-block_num 4 
+                            span.text-block__title Handling Text Input
+                            p.text-block__main TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
+                            p.text-block__main For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕🍕🍕".
