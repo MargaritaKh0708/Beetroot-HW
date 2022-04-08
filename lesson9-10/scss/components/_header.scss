@@ -1,9 +1,16 @@
 //! Wrapper style
 
+.header {
+  background-color: $c-creamy;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
 .header__wrapper {
   justify-content: space-between;
+  padding: 35px 15px;
   display: flex;
-  height: 78px;
   width: 100%;
 }
 //Logo style
@@ -12,7 +19,6 @@
   display: flex;
 }
 .logo-pic {
-  margin-right: 5px;
   width: 32px;
   height: 32px;
 }
@@ -31,7 +37,6 @@
   @include f-Poppins-400;
   justify-content: space-between;
   list-style-type: none;
-  margin-top: 42px;
   line-height: 28px;
   font-size: 14px;
   color: $c-brown;
@@ -55,7 +60,7 @@
   margin-right: 14px;
   border-radius: 6px;
   line-height: 24px;
-  margin-top: 35px;
+
   font-size: 16px;
   width: 102px;
   height: 46px;

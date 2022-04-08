@@ -1,0 +1,24 @@
+mixin footer
+    footer.footer 
+        .footer__wrapper.container
+            .footer__logo
+                .logo-pic
+                    img(src="assets/pic/header/Bitmap.png", alt="")
+                .logo-name 
+                    img(src="assets/pic/header/productly.png", alt="")
+            .footer__content 
+                .footer__item
+                    ul.footer__list
+                        li.footer__listitem: a(href="#") About Us
+                        li.footer__listitem: a(href="#") Blog
+                        li.footer__listitem: a(href="#") Contact
+                        li.footer__listitem: a(href="#") FAQ
+                    ul.footer__list
+                        li.footer__listitem: a(href="#") Disclaimer
+                        li.footer__listitem: a(href="#") Financing
+                        li.footer__listitem: a(href="#") Privacy Policy
+                        li.footer__listitem: a(href="#") Terms of Service
+                .footer__item 
+                    form.footer__forms(action="#") 
+                        input.footer__forms(type="tel" name="tel" id="tel" maxlength="13" value="+380") 
+                        button.design-block__button.h-size(type="submit") Sing up Now
