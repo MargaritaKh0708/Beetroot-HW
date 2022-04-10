@@ -1,0 +1,24 @@
+.card__policy-section,
+.card__call-of-action {
+    text-align: center;
+}
+
+.card__text_width {
+    max-width: 410px;
+    margin: 0 auto;
+
+}
+
+.card__call-of-action {
+    border-top: 1px solid $c-lightgray;
+}
+
+.card__text_f-size {
+    margin-top: 13px;
+    font-size: 16px;
+}
+
+
+.input-field_size {
+    width: 150px;
+}

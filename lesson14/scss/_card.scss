@@ -1,0 +1,30 @@
+//! main styles fot the card
+
+.card {
+    margin: 50px 60px 50px 22px;
+    background-color: $c-white;
+    display: inline-block;
+    margin-right: 22px;
+    padding: 20px;
+
+    @media screen and (max-width: 1250px) {
+        margin: 0 auto;
+
+    }
+}
+
+.card__wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 540px;
+    height: 590px;
+    width: 100%;
+}
+
+.card__title {
+    -webkit-text-stroke: 1px $c-black; // Styles for the title 
+    @include f-Inter-600;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+}

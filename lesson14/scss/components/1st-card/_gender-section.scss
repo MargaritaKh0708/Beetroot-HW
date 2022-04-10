@@ -1,0 +1,55 @@
+//? Radio styles
+
+.card__gender-section {
+
+    display: flex;
+    gap: 20px;
+}
+
+.label_flex {
+    align-items: center; // Radio and text on one level
+    display: flex;
+}
+
+.radio-field {
+    display: none; // Hide real button to castomize it 
+}
+
+.label__fake {
+    border: solid 1px $c-lightgray; // Create fake button insted of real one 
+    display: inline-block;
+    background: $c-white;
+    position: relative;
+    margin-right: 8px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+
+}
+
+.label__fake::before {
+    transform: translate(-50%, -50%); // Create a fake choose-point for radio button...
+    background: $c-white;
+    position: absolute;
+    border-radius: 50%;
+    transition: .5s;
+    display: block;
+    content: "";
+    height: 7px;
+    width: 7px;
+    opacity: 0; //.. and hide it 
+    left: 50%;
+    top: 50%;
+
+}
+
+.radio-field:checked+.label__fake::before {
+    // when the radio button is checked we'll see the fake button with the fake choose-point
+    opacity: 1;
+}
+
+.radio-field:checked+.label__fake {
+    // change bg-color for the choose -button
+    background-color: $c-blue;
+    border: $c-blue;
+}

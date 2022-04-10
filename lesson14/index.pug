@@ -1,0 +1,63 @@
+include ./components/1st-card/name-section
+include ./components/1st-card/email-section
+include ./components/1st-card/gender-section
+include ./components/1st-card/place-section
+include ./components/1st-card/text-block-section
+include ./components/2nd-card/photo-section
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Lesson 14
+        link(type="image/x-icon" href="../favicon.ico" rel="shortcut icon")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+        link(rel="stylesheet" href="index.css")
+    body 
+        .app
+            .container
+                .card 
+                    .card__wrapper
+                        h1.card__title Create an Account
+                        form.main-form(action="#" method="post") 
+                            +name-section()
+                            +email-section()
+                            +gender-section()
+                            +place-section()
+                            +text-block-section()
+                .card 
+                    .card__wrapper
+                        h1.card__title Profile
+                        +photo-section()
+                        .card__name-section
+                            label.label(for="name") 
+                                span.label__text Name
+                                input.input-field(type="text" name='name' id='name' placeholder="Enter your name")
+                            label.label(for="email") 
+                                span.label__text E-mail
+                                input.input-field(type="email" name='email' id='email' placeholder="Enter your email")
+                        +place-section()
+                        .card__name-section
+                            label.label(for="zipcode") 
+                                span.label__text Zip Code
+                                input.input-field(type="text" name='zipcode' id='zipcode' placeholder="Enter zipcode")
+                            label.label(for="tel") 
+                                span.label__text Phone Number
+                                input.input-field(type="tel" name='tel' id='tel' minlength="13" placeholder="+380")
+                        .card__textarea-section
+                            input.input-field.input-field_size(type="text" name='text' id='text')
+
+
+
+
+
+
+
+
+
+

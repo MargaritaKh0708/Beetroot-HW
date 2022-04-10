@@ -1,0 +1,388 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+  opacity: 0.4;
+}
+
+input:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+  opacity: 0.4;
+}
+
+input::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+  opacity: 0.4;
+}
+
+input::placeholder {
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+  opacity: 0.4;
+}
+
+.card__name-section,
+.card__gender-section,
+.card__place-section,
+.card__email-section,
+.card__textarea-section,
+.card__policy-section,
+.card__call-of-action,
+.card__photo-section {
+  margin-top: 20px;
+}
+
+.card {
+  margin: 50px 60px 50px 22px;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 22px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .card {
+    margin: 0 auto;
+  }
+}
+
+.card__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 540px;
+  height: 590px;
+  width: 100%;
+}
+
+.card__title {
+  -webkit-text-stroke: 1px #000;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.card__name-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
+.label {
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #545454;
+  display: block;
+}
+
+.label__text {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.input-field {
+  border: solid 1px #969696;
+  padding: 8px 38px 8px 10px;
+  border-radius: 6px;
+  margin-top: 7px;
+  display: block;
+  height: 38px;
+  width: 245px;
+}
+
+.input-field:focus {
+  border: solid 1px #007bff;
+  outline-offset: 0;
+  outline: 0;
+}
+
+.input-field_width {
+  width: 100%;
+}
+
+.card__text {
+  font-family: "Inter", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+  padding-bottom: 5px;
+  padding-top: 7px;
+  font-size: 14px;
+}
+
+.card__gender-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.label_flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio-field {
+  display: none;
+}
+
+.label__fake {
+  border: solid 1px #969696;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  margin-right: 8px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.label__fake::before {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: block;
+  content: "";
+  height: 7px;
+  width: 7px;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+}
+
+.radio-field:checked + .label__fake::before {
+  opacity: 1;
+}
+
+.radio-field:checked + .label__fake {
+  background-color: #007bff;
+  border: #007bff;
+}
+
+.card__policy-section,
+.card__call-of-action {
+  text-align: center;
+}
+
+.card__text_width {
+  max-width: 410px;
+  margin: 0 auto;
+}
+
+.card__call-of-action {
+  border-top: 1px solid #969696;
+}
+
+.card__text_f-size {
+  margin-top: 13px;
+  font-size: 16px;
+}
+
+.input-field_size {
+  width: 150px;
+}
+
+.card__place-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.select-fiel.country {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::before {
+  border-width: 5px 5px 0 5px;
+  border-color: #545454 transparent transparent transparent;
+  pointer-events: none;
+  border-style: solid;
+  position: absolute;
+  display: block;
+  opacity: 0.5;
+  content: "";
+  right: 10px;
+  height: 0;
+  width: 0;
+  top: 55%;
+}
+
+.select-wrapper::after {
+  border-color: transparent transparent #545454 transparent;
+  border-width: 0 5px 5px 5px;
+  pointer-events: none;
+  border-style: solid;
+  position: absolute;
+  display: block;
+  opacity: 0.5;
+  content: "";
+  right: 10px;
+  height: 0;
+  width: 0;
+  top: 35%;
+}
+
+.card__photo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.card__photo-forms {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__photo-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__photo-label {
+  position: relative;
+}
+
+.card__photo-input {
+  display: none;
+}
+
+.card__ptoto-fakeinput {
+  border: 1px solid #969696;
+  padding: 6px 32px 6px 10px;
+  border-radius: 6px;
+  display: block;
+  width: 138px;
+  height: 30px;
+}
+
+.card__photo-svg {
+  position: absolute;
+  margin-right: 10px;
+  height: 12px;
+  width: 12px;
+  top: 8px;
+  right: 2px;
+}
+
+.card__reset-input {
+  display: none;
+}
+
+.card__reset-label {
+  position: relative;
+  margin-left: 10px;
+  width: 30px;
+}
+
+.card__reset-svg {
+  position: absolute;
+  height: 12px;
+  width: 10px;
+  left: 10px;
+  top: 8px;
+}
+
+.card__reset-fake {
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #969696;
+  display: block;
+  position: absolute;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,32 @@
+//? Place-section styles 
+.card__place-section {
+    display: flex;
+    gap: 10px;
+}
+
+.select-fiel.country {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::before {
+    border-width: 5px 5px 0 5px;
+    border-color: $c-darkgray transparent transparent transparent;
+    @include fake-triangle;
+    top: 55%;
+
+}
+
+.select-wrapper::after {
+    border-color: transparent transparent $c-darkgray transparent;
+    border-width: 0 5px 5px 5px;
+    @include fake-triangle;
+    top: 35%;
+
+}

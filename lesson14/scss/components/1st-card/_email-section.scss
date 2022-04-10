@@ -1,0 +1,12 @@
+.input-field_width {
+    width: 100%;
+}
+
+.card__text {
+    @include f-Inter-400;
+    color: $c-lightgray;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    font-size: 14px;
+
+}

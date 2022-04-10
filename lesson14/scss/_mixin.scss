@@ -1,0 +1,28 @@
+@mixin f-Inter-400 {
+    font-family: "Inter", sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin f-Inter-600 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+@mixin fake-triangle {
+    pointer-events: none;
+    border-style: solid;
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    content: "";
+    right: 10px;
+    height: 0;
+    width: 0;
+
+
+
+
+}

@@ -1,0 +1,57 @@
+//? Main styles og basic elements and all html form
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $c-backgr;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $c-blue;
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+
+    @media screen and (max-width: 1250px) {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+
+label {
+    cursor: pointer;
+}
+
+input::placeholder {
+    @include f-Inter-400;
+    color: $c-lightgray;
+    opacity: 0.4;
+}
+
+.card__name-section,
+.card__gender-section,
+.card__place-section,
+.card__email-section,
+.card__textarea-section,
+.card__policy-section,
+.card__call-of-action,
+.card__photo-section {
+    margin-top: 20px;
+}

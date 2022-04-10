@@ -1,0 +1,35 @@
+.card__name-section {
+    // arrangement of block elements
+    display: flex;
+    gap: 12px;
+}
+
+
+.label {
+    @include f-Inter-400; // Main styles for all the labels
+    color: $c-darkgray;
+    display: block;
+}
+
+.label__text {
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+}
+
+.input-field {
+    border: solid 1px $c-lightgray; //main styles for inputs 
+    padding: 8px 38px 8px 10px;
+    border-radius: 6px;
+    margin-top: 7px;
+    display: block;
+    height: 38px;
+    width: 245px;
+
+}
+
+.input-field:focus {
+    border: solid 1px $c-blue; // change color of border 
+    outline-offset: 0;
+    outline: 0; // remove browser "border"
+}
