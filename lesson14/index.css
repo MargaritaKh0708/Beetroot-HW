@@ -246,12 +246,33 @@ input::placeholder {
 }
 
 .card__text_f-size {
-  margin-top: 13px;
+  margin-top: 4px;
   font-size: 16px;
 }
 
 .input-field_size {
   width: 150px;
+}
+
+.textarea {
+  outline-offset: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+.textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: 0 0 10px #007bff;
+          box-shadow: 0 0 10px #007bff;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 50%;
 }
 
 .card__place-section {

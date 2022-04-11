@@ -14,11 +14,31 @@
 }
 
 .card__text_f-size {
-    margin-top: 13px;
+    margin-top: 4px;
     font-size: 16px;
 }
 
 
 .input-field_size {
     width: 150px;
+}
+
+.textarea {
+    outline-offset: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+.textarea::-webkit-scrollbar {
+    width: 3px;
+}
+
+.textarea::-webkit-scrollbar-track {
+    box-shadow: 0 0 10px $c-blue;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background-color: $c-black;
+    border-radius: 50%;
 }

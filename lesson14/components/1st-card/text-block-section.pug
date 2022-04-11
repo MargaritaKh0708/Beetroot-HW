@@ -1,6 +1,8 @@
 mixin text-block-section 
     .card__textarea-section
-        input.input-field.input-field_width(type="text" name='text' id='text')
+        label.label(for="textarea") 
+            textarea.textarea.input-field(id="textarea" onkeyup="charCount();" name="description" cols="30" rows="2" maxlenth="100" minlength="3" placeholder="Tell us about youself") 
+            .textarea_count(id="textarea_count") 0/100 (Max Character 100)
     .card__policy-section 
         p.card__text.card__text_width By clicking the 'Sign Up' button, you confirm that you accept our <a (class="card__href" href="#")> Terms of Use </a> and  <a (class="card__href" href="#")>Privacy Policy</a>
     .card__call-of-action

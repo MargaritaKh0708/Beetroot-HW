@@ -3,7 +3,7 @@ include ./components/1st-card/email-section
 include ./components/1st-card/gender-section
 include ./components/1st-card/place-section
 include ./components/1st-card/text-block-section
-include ./components/2nd-card/photo-section
+include ./components/2d-card/photo-section
 
 doctype html
 html(lang="en")
@@ -50,8 +50,9 @@ html(lang="en")
                                 span.label__text Phone Number
                                 input.input-field(type="tel" name='tel' id='tel' minlength="13" placeholder="+380")
                         .card__textarea-section
-                            input.input-field.input-field_size(type="text" name='text' id='text')
-
+                            input.input-field.input-field_size(type="text" name='text' id='text') 
+        script
+            include script.js
 
 
 
