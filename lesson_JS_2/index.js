@@ -121,7 +121,7 @@ console.log(`Це все, що ти витратиш: ${totalWait}`, 'грн');
 //* Delete product card
 
 let itemDelete = () => {
-    let userAnswer = prompt('Який продукт ти хочешь видалити?')
+    let userAnswer = prompt('Який продукт ти хочешь видалити (Шампунь, Курятина, Огірки, Чай Batik, Маска для волосся, Кава, Миргородська) ?')
     catalog.forEach((element, index) => {
         if (catalog[index].name === userAnswer)
             itemIndex = index;
