@@ -47,6 +47,10 @@ body {
   min-height: 100vh;
 }
 
+.app {
+  overflow: hidden;
+}
+
 img {
   width: 100%;
 }
