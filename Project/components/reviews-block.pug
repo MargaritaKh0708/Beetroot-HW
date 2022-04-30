@@ -1,0 +1,22 @@
+include ../elements/swipers/reviews-swiper
+
+mixin reviews-block
+    section.reviews-block
+        .reviews-block__wrapper.container   
+            .reviews-block__head-content
+                p.reviews-block__subtitle.subtitle #reviews
+                h2.reviews-block__title.title.h-hide WHAT OUR CLIENTS SAY 
+            .reviews-block__main-content
+                .reviews-block__main-content-part
+                    h2.reviews-block__title.title WHAT OUR CLIENTS SAY 
+                    .reviews-block__icon
+                        img(src="./assets/pic/clients/Vector.png" alt="")
+                    +reviews-swiper()
+                    .reviews-block__button.button-style
+                        a.reviews-block__href.button-href-style(href="#") Make an appointment 
+                .reviews-block__main-content-part
+                    .reviews-block__img 
+                        img(src="./assets/pic/clients/img.png" alt="")
+            .reviews-block__button.button-style.h-hide
+                a.reviews-block__href.button-href-style(href="#") More         
+

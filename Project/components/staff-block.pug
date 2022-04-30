@@ -1,0 +1,44 @@
+include ../elements/button-bottom 
+include ../elements/swipers/master-swiper
+
+
+mixin staff-block 
+    section.staff-block
+        .staff-block__wrapper.container
+            .staff-block__text-part 
+                .staff-block__subtitle.subtitle #STAFF
+                h2.staff-block__title.title MASTERS
+            .staff-block__buttons
+                +button-bottom()
+                +button-bottom()
+                +button-bottom()
+            .staff-block__card-list 
+                .staff-block__card 
+                    .staff-block__card-img.staff-block_first-man
+                        img(src="./assets/pic/masters-block/master1-bw.png" alt="")
+                        .staff-block__card-descrip
+                            .staff-block__name Daniel
+                            .staff-block__descrip Good day, my name is Daniel, I am 20 years old. Despite the fact that I am younger than most of the masters in the team - my life has been extremely eventful since childhood, it is full of victories and defeats, rash actions and incredible luck ... I'm afraid this story will not fit into one post) But I will gladly share my biography with you in my chair, as...
+                                .staff-block__reserve 
+                                    a.staff-block__href RESERVE
+                .staff-block__card 
+                    .staff-block__card-img.staff-block_second-man
+                        img(src="./assets/pic/masters-block/master2-bw.png" alt="")
+                        .staff-block__card-descrip
+                            .staff-block__name Michael
+                            .staff-block__descrip Good day, my name is Michael, I am 31 years old. Despite the fact that I am younger than most of the masters in the team - my life has been extremely eventful since childhood, it is full of victories and defeats, rash actions and incredible luck ... I'm afraid this story will not fit into one post) But I will gladly share my biography with you in my chair, as...
+                                .staff-block__reserve 
+                                    a.staff-block__href RESERVE
+                .staff-block__card 
+                    .staff-block__card-img.staff-block_third-man 
+                        img(src="./assets/pic/masters-block/master3-bw.png" alt="")
+                        .staff-block__card-descrip
+                            .staff-block__name Evan
+                            .staff-block__descrip Good day, my name is Evan, I am 28 years old. Despite the fact that I am younger than most of the masters in the team - my life has been extremely eventful since childhood, it is full of victories and defeats, rash actions and incredible luck ... I'm afraid this story will not fit into one post) But I will gladly share my biography with you in my chair, as...
+                                .staff-block__reserve 
+                                    a.staff-block__href RESERVE
+        +master-swiper()
+        .staff-block__hide-button.button-style
+            a.staff-block__href.button-href-style(href="#") Reserve    
+
+

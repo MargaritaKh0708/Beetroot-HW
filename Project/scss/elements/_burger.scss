@@ -1,0 +1,39 @@
+//! Main burger styles 
+
+.header__burger {
+    display: none;
+
+    // Adaptive changes 
+    @media screen and (max-width: 1280px) {
+        display: block;
+    }
+}
+
+.burger {
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    border: none;
+}
+
+// Hover effect
+
+.burger:hover {
+    background-color: $c-black-gold;
+    transition: .5s;
+}
+
+.burger span {
+    background-color: $c-darklemon;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    width: 30px;
+    height: 3px;
+}
+
+.burger span:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,141 @@
+//! Main form styles 
+
+.map-block__form-part {
+    background-color: $c-white;
+    margin-left: auto;
+    margin-top: 180px;
+    max-width: 590px;
+
+    // Adaptive changes
+    @media screen and (max-width:1000px) {
+        margin-right: auto;
+        margin-top: 0;
+    }
+}
+
+.map-block__form-part:nth-last-of-type(2) {
+
+    // Adaptive changes
+    @media screen and (max-width:1000px) {
+        display: none;
+    }
+}
+
+.map-block__form {
+    flex-direction: column;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+
+    // Adaptive changes
+    @media screen and (max-width:1000px) {
+        padding: 0 10px;
+        width: 290px;
+    }
+
+}
+
+// All text items styles 
+
+// TITLE
+
+.map-block__form-title {
+    text-transform: uppercase;
+    color: $c-extra-darkgray;
+    @include f-Archivo-700;
+    line-height: 40px;
+    margin-top: 45px;
+    padding: 10px 0;
+    font-size: 29px;
+
+    // Adaptive changes
+    @media screen and (max-width:1000px) {
+        margin-top: 30px;
+    }
+}
+
+.map-block__form-text {
+    @include f-Archivo-400;
+    color: $c-gray;
+}
+
+// Name and Number input field 
+.map-block__form-input {
+    border: none;
+    border-bottom: 1px solid $c-extra-darkgray;
+    @include f-Archivo-400;
+    max-width: 360px;
+    margin-top: 10px;
+    padding: 10px 0;
+    outline: none;
+}
+
+// Labels styles
+
+.map-block__form-label {
+    padding: 45px 0 65px 0;
+
+    // Adaptive changes
+    @media screen and (max-width:1000px) {
+        padding: 30px 0;
+    }
+}
+
+//? Checkbox styles 
+
+.map-block__form-checkbox {
+    display: none; // Hide real button to castomize it 
+}
+
+.map-block__form-checkbox-fake {
+    border: solid 1px $c-gray; // Create fake button insted of real one 
+    display: inline-block;
+    background: $c-white;
+    position: relative;
+    height: 15px;
+    width: 15px;
+
+}
+
+.map-block__form-checkbox-fake::before {
+    transform: translate(20%, -5%); // Create a fake choose-point
+    position: absolute;
+    transition: .5s;
+    font-size: 14px;
+    color: $c-white;
+    content: "✓";
+    opacity: 0; //.. and hide it 
+
+
+}
+
+.map-block__form-checkbox:checked+.map-block__form-checkbox-fake::before {
+    // when the button is checked we'll see the fake button with the fake choose-point
+    opacity: 1;
+}
+
+.map-block__form-checkbox:checked+.map-block__form-checkbox-fake {
+    // change bg-color for the choose -button
+    background-color: $c-darklemon;
+    border: $c-darklemon;
+}
+
+.map-block__form-text {
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.map-block__href {
+    text-decoration: underline;
+    color: $c-gray;
+}
+
+.map-block__form-button {
+    border-color: $c-black-gold;
+
+    // Adaptive changes
+    @media screen and (max-width:1000px) {
+        margin-top: 30px;
+    }
+}

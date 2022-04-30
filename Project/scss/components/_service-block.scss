@@ -1,0 +1,194 @@
+//? Main servicce block style 
+
+.service-block {
+    background-color: $c-white;
+}
+
+.service-block__wrapper.container {
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+// Wrapper styles 
+.service-block__wrapper {
+    @include media-block-p;
+    padding-bottom: 158px;
+    position: relative;
+    padding-top: 130px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        padding-bottom: 0;
+    }
+}
+
+// Add indent of text elements 
+
+.service-block__head-content {
+    flex-direction: column;
+    display: flex;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        padding-left: 10px;
+    }
+
+}
+
+.service-block__main-content {
+    text-align: center;
+    margin-top: 50px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        margin-top: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+
+}
+
+// Styles of price list on block 
+
+.service-block__prices {
+    vertical-align: top;
+    margin-right: 45px;
+    width: 356px;
+
+}
+
+.service-block__list {
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        display: none;
+    }
+}
+
+// Style of each item of price list 
+
+.service-block__item {
+
+    justify-content: space-between;
+    @include f-Archivo-400;
+    align-items: baseline;
+    line-height: 30px;
+    padding-top: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+
+
+}
+
+// Hover effect - lemon line on the list item 
+
+.service-block__item:hover {
+    background: linear-gradient(to top, $c-darklemon 3%, $c-lemon 47%, transparent 50%);
+}
+
+// Create dots in the price list 
+
+.service-block__item-dot {
+    border-bottom: 1px dotted $c-darkgray;
+    height: 1em;
+    flex: 1 0;
+}
+
+//Add display to the pages elements 
+
+.service-block__prices,
+.service-block__img {
+    display: inline-block;
+}
+
+
+.service-block__img {
+    position: relative;
+    max-width: 100%;
+    height: 532px;
+    width: 813px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// Text content styles near the photo
+
+.service-block__subcontent {
+    background-color: $c-white;
+    text-align: justify;
+    padding-right: 30px;
+    color: $c-darkgray;
+    position: absolute;
+    padding-left: 30px;
+    bottom: -50px;
+    right: 50px;
+    width: 474px;
+    height: auto;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        background: none;
+        color: $c-white;
+        left: 0;
+        top: 0;
+    }
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        padding-left: 10px;
+        width: auto;
+    }
+
+}
+
+.service-block__subcontent-title {
+    @include f-Montserrat-700-20px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        @include f-Montserrat-700-64px;
+    }
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        font-size: 18px;
+    }
+}
+
+.service-block__subcontent-text {
+    @include f-Archivo-400;
+    padding-bottom: 13px;
+    line-height: 19px;
+    font-size: 12px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        display: none;
+
+    }
+}
+
+.service-block__hide-button {
+    display: none;
+
+    // Adaptive changes 
+    @media screen and (max-width:1330px) {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+}

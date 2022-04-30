@@ -1,0 +1,77 @@
+//! Main header styles 
+
+header {
+    background-color: $c-black-gold;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    position: fixed;
+    opacity: 0.5;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    // Media changes
+    @media screen and (max-width:600px) {
+        padding-top: 20px;
+    }
+}
+
+//Set position of header elements 
+
+.header__wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    // Media changes
+    @media screen and (max-width: 1280px) {
+        justify-content: space-around;
+
+    }
+}
+
+//? Navigashion styles 
+
+.navigation {
+
+    // Media changes
+    @media screen and (max-width:1280px) {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+    }
+}
+
+.navigation__list {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 147px;
+
+    // Media changes
+    @media screen and (max-width:1280px) {
+        gap: 0;
+    }
+
+    @media screen and (max-width:600px) {
+        justify-content: center;
+    }
+}
+
+li.navigation__item a.navigation__href {
+
+    // Media changes
+    @media screen and (max-width:1280px) {
+        display: none;
+    }
+}
+
+.navigation__href {
+    text-transform: uppercase;
+    @include f-Archivo-400;
+    letter-spacing: 6px;
+    padding: 5px 2px;
+    color: $c-lemon;
+}

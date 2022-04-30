@@ -1,0 +1,37 @@
+include  ../elements/swipers/about-swiper
+
+mixin about-block
+    section.about-block
+        .about-block__wrapper.container
+            .about-block__head-content
+                .about-block__text-list
+                    p.about-block__subtitle.subtitle #ABOUT
+                    h2.about-block__title.title WHO WE ARE
+                .about-block__img-hide
+                    .about-block__img.h-hide
+                        img(src="./assets/pic/about-block/master4.png" alt="ABOUT") 
+            .about-block__main-content
+                .about-block__text-block
+                    .about-block__descrip.descrip
+                        .about-block__descrip-item 
+                            span In the barbershop you will learn a real symbiosis of classic style manners and modern trends. Our masters will help you create your unique image by choosing a haircut that will appeal to your facial features, because it is believed that every successful man should have his own style of style, the charm of which will remain in everyone's memory.
+                        .about-block__descrip-item 
+                            span Barbershop is not only a place that has united professionals, but also a place where you will always find an interlocutor with whom you can have an interesting dialogue over a glass of whiskey, we are a community of real men in Kiev.
+                    .about-block__icons-list 
+                        .about-block__icons-item
+                            h3.about-block__icons-title GAMES
+                            .about-block__icons-pic
+                                img(src="./assets/pic/about-block/games.png" alt="GAMES")
+                        .about-block__icons-item
+                            h3.about-block__icons-title HOBIE
+                            .about-block__icons-pic
+                                img(src="./assets/pic/about-block/hobie1.png" alt="HOBIE")
+                        .about-block__icons-item
+                            h3.about-block__icons-title NEWS
+                            .about-block__icons-pic
+                                img(src="./assets/pic/about-block/news.png" alt="NEWS")
+                .about-block__img
+                    img(src="./assets/pic/about-block/master4.png" alt="ABOUT")
+            p.about-block__hidden-subtitle.subtitle #FUN
+            +about-swiper()
+            .about-block__hidden-descrip.descrip Barbershop is not only a place that has united professionals, but also a place where you will always find an interlocutor with whom you can have an interesting dialogue over a glass of whiskey, we are a community of real men in Kiev.

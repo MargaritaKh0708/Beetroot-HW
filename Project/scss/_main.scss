@@ -1,0 +1,125 @@
+//? Main styles og basic elements and all html form
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $c-black-gold;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 1700px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 680px) {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.logo {
+    display: flex;
+    height: 116px;
+    width: 148px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    @include f-Archivo-400;
+    color: $c-lemon;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.title {
+    @include f-Montserrat-700-64px;
+    letter-spacing: 6px;
+    margin-top: 18px;
+    padding: 10px 0;
+
+    @media screen and (max-width:600px) {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    @media screen and (max-width:340px) {
+        font-size: 26px;
+    }
+}
+
+.descrip {
+    color: $c-extra-lightrgray;
+    @include f-Archivo-400;
+    text-align: justify;
+    line-height: 26px;
+    padding: 5px 0;
+
+    @media screen and (max-width:450px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width:370px) {
+        line-height: 22px;
+    }
+
+}
+
+.button-style {
+    @include button-style;
+}
+
+.button-href-style {
+    @include button-href-style;
+}
+
+.descrip-style {
+    @include f-Archivo-400;
+    letter-spacing: 4px;
+    padding-bottom: 6px;
+    line-height: 20px;
+    padding-top: 6px;
+    font-size: 18px;
+    color: $c-light;
+    width: 388px;
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        width: auto;
+    }
+}
+
+//Helpers
+
+.h-margintop {
+    margin-top: 7px;
+}
+
+.h-hide {
+    display: none;
+}
+
+.h-color {
+    color: $c-lemon;
+    cursor: pointer;
+}

@@ -1,0 +1,96 @@
+//! Main footer style
+
+.footer {
+    background: $c-footer-color;
+    min-height: 295px;
+}
+
+// Wrapper settings styles 
+
+.footer__wrapper {
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    padding-top: 86px;
+    display: flex;
+
+    //Media changes 
+
+    @media screen and (max-width:850px) {
+        @include footer-flex-direction;
+        padding-top: 38px;
+
+    }
+}
+
+// Set position of footer menu elements 
+
+.footer__menu {
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    gap: 54px;
+
+    //Media changes 
+    @media screen and (max-width:850px) {
+        @include footer-flex-direction;
+    }
+}
+
+// Set position of footer menu items and group of items 
+
+.footer__menu-list {
+    @include f-Montserrat-700-64px;
+    line-height: 24px;
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
+
+    //Media changes 
+    @media screen and (max-width:850px) {
+        @include footer-flex-direction;
+    }
+}
+
+
+.footer__menu-list:nth-child(2) {
+    gap: 19px;
+}
+
+//Set paddings for all text elements 
+.footer__menu-item,
+.footer__menu-item-policy,
+.footer__social-list-item {
+    padding: 5px 0;
+}
+
+//Set color for all text elements 
+
+.footer__menu-href {
+    color: $c-darkgray;
+
+}
+
+//Set 'hover'-changes of color for all text (icons) elements 
+
+.footer__menu-href:hover,
+.footer__policy-href:hover,
+.footer__social-href:hover {
+    color: $c-lemon;
+
+}
+
+//Style for icons social medis list 
+
+.footer__social-list {
+    color: $c-lightgray;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__policy-href,
+.footer__social-href {
+    @include f-Archivo-400;
+    color: $c-lightgray;
+
+}

@@ -1,0 +1,133 @@
+//! Main works block styles 
+
+.works-block {
+    @include media-block-m;
+    background: $c-black;
+    margin-top: 94px;
+    max-width: 100%;
+
+}
+
+// Wrapper's styles
+.works-block__wrapper {
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// Content for mobile version 
+.works-block__head-hide-content.works-block__head-content {
+    display: none;
+
+    // Adaptive changes 
+    @media screen and (max-width: 680px) {
+        @include works-block-hide-part;
+    }
+}
+
+// Photo gallery styles 
+
+.works-block__gallery {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+// Style of each gallery  row 
+.works-block__row {
+    display: flex;
+    gap: 10px;
+}
+
+// Style of each elements of gallery 
+.works-block__img {
+    opacity: 0.4;
+}
+
+// Hover effect
+.works-block__img:hover {
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 1;
+}
+
+// Styles of block's text part 
+
+
+.works-block__head-content {
+    pointer-events: none;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: absolute;
+    top: 112px;
+
+    // Adaptive changes 
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
+}
+
+.works-block__title {
+    color: $c-extra-lightrgray;
+}
+
+.works-block__descrip {
+    color: $c-extra-lightrgray;
+    text-align: justify;
+    max-width: 344px;
+}
+
+
+// Style of social media text line
+.works-block__social {
+    pointer-events: visible;
+    padding-bottom: 10px;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 35px;
+    display: flex;
+    gap: 12px;
+}
+
+.works-block__social-href {
+    color: $c-extra-lightrgray;
+    @include f-Archivo-400;
+    font-size: 14px;
+}
+
+.works-block__social-href:hover {
+    color: $c-lemon;
+}
+
+// Adaptive description changes 
+.works-block__hide-descrip {
+    display: none;
+
+    // Adaptive changes 
+    @media screen and (max-width: 680px) {
+        @include works-block-hide-part;
+        max-width: 100%;
+
+    }
+}
+
+.works-block__hide-social {
+    display: none;
+
+    // Adaptive changes 
+    @media screen and (max-width: 680px) {
+        display: flex;
+
+    }
+}
+
+.icon-hide-instagram {
+    font-size: 40px;
+    color: $c-lemon;
+    cursor: pointer;
+}
+
+.works-block__hide-social-href {
+    max-width: 100px;
+}

@@ -1,0 +1,88 @@
+//! Main map-block styles
+
+.map-block {
+    background-image: url(./assets/pic/MapsicleMap.png);
+    position: relative;
+    min-height: 740px;
+    padding-top: 50px;
+
+}
+
+//Set position of block elements 
+
+.map-block__main-content {
+
+    // Media changes
+    @media screen and (max-width:1000px) {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        display: flex;
+        gap: 36px;
+    }
+}
+
+// Set style of adress part  
+
+.map-block__contacts {
+    position: absolute;
+    bottom: 30%;
+
+    // Media changes
+    @media screen and (max-width:1000px) {
+        text-align: center;
+        position: static;
+
+    }
+}
+
+.map-block__descrip {
+    color: $c-darklemon;
+    line-height: 18px;
+    font-size: 14px;
+
+    // Media changes
+    @media screen and (max-width:1000px) {
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+}
+
+//Set style of icon 'location'
+
+.map-block__location {
+    position: relative;
+    height: 50px;
+
+}
+
+.icon-location_on {
+    color: $c-darklemon;
+    position: absolute;
+    font-size: 50px;
+    bottom: 50px;
+    left: 275px;
+
+    // Media changes
+    @media screen and (max-width:1000px) {
+        left: 50%;
+    }
+
+}
+
+// Set styles of hide part
+
+.map-block__hide-part {
+    display: none;
+
+    // Media changes
+    @media screen and (max-width:1000px) {
+        background-color: $c-white;
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 0;
+
+    }
+}

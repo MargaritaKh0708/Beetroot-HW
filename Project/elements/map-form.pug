@@ -1,0 +1,13 @@
+mixin map-form  
+    .map-block__form-part
+        form.map-block__form(action="#" method="post")
+            h3.map-block__form-title create your unique STYLE
+            input.map-block__form-input(type="text" name='userName' id='userName' placeholder='Name')
+            input.map-block__form-input(type='text' name='userNumber' id='userNumber' placeholder='Number')
+            .map-block__form-button.button-style
+                a.map-block__form-href.button-href-style(href="#") Make an appointment 
+            label.map-block__form-label(for="userConfirm")
+                input.map-block__form-checkbox(type='checkbox' name='Confirm' id='userConfirm' checked)
+                span.map-block__form-checkbox-fake
+                span.map-block__form-text I confirm my agreement with the 
+                    a.map-block__href(href='#') personal data processing policy  

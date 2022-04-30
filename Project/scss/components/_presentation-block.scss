@@ -1,0 +1,155 @@
+//! Main block styles
+
+.presentation-block {
+    margin-top: 328px;
+    width: 100%;
+
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        margin-top: 200px;
+    }
+}
+
+.presentation-block__wrapper {
+    padding-bottom: 20px;
+    position: relative;
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        padding-bottom: 60px;
+    }
+}
+
+//! Styles of text part of block 
+
+.presentation-block__text-part {
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+
+// Subtitle styles
+
+.presentation-block__subtitle {
+    text-transform: uppercase;
+    @include f-Archivo-400;
+    letter-spacing: 6px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: $c-lemon;
+
+}
+
+// Title styles 
+
+.presentation-block__title {
+    @include f-mr_apexmk3-400;
+    padding-bottom: 10px;
+    letter-spacing: 10px;
+    color: $c-semiwhite;
+    line-height: 58px;
+    padding-top: 10px;
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        font-size: 48px;
+        margin: 0;
+    }
+
+}
+
+.presentation-block__button {
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+// Set styles for the adress part 
+
+.presentation-block__contacts {
+    margin-top: 166px;
+
+    // Adaptive changes 
+    @media screen and (max-width:600px) {
+        display: none;
+    }
+
+}
+
+// Styles of social media block
+
+.presentation-block__social {
+    justify-content: flex-start;
+    margin-top: 102px;
+    display: flex;
+    gap: 67px;
+}
+
+.presentation-block__social-item {
+    border-bottom: 1px solid $c-darklemon;
+    padding-bottom: 6px;
+}
+
+// Hover effects - change the color of href
+
+.presentation-block__social-item:hover {
+    border-bottom: 1px solid $c-lemon;
+    transition: 0.5s;
+}
+
+.presentation-block__social-href {
+    @include f-Archivo-400;
+    letter-spacing: 2px;
+    color: $c-lightgray;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+// Block Bottoms styles
+
+.presentation-block__bottom {
+    align-items: flex-end;
+    display: flex;
+    gap: 260px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1024px) {
+        display: none;
+    }
+}
+
+// Group elements styles 
+
+.presentation-block__more-group {
+    flex-direction: column;
+    align-items: center;
+    color: $c-light;
+    display: flex;
+    gap: 10px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1280px) {
+        display: none;
+    }
+}
+
+.presentation-block__more-text {
+    @include f-Archivo-600;
+    letter-spacing: 10px;
+    color: $c-light;
+
+}
+
+.presentation-block__img {
+    position: absolute;
+    overflow: hidden;
+    height: 1134px;
+    width: 1054px;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}

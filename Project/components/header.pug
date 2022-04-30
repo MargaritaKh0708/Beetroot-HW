@@ -1,0 +1,20 @@
+include ../elements/burger
+
+mixin header 
+    header.header
+        .header__wrapper.container 
+            nav.navigation
+                ul.navigation__list
+                    li.navigation__item
+                        a.navigation__href(href="#") Services
+                    li.navigation__item
+                        a.navigation__href(href="#") Masters
+                    li.navigation__item
+                        a.header__logo.logo(href="#")
+                            img(src="./assets/pic/logo.svg" alt="")
+                    li.navigation__item
+                        a.navigation__href(href="#") Product
+                    li.navigation__item
+                        a.navigation__href(href="#") Contacts
+            +burger()
+

@@ -1,0 +1,47 @@
+//! Main buttons style
+
+// Set position 
+
+.arrow-down {
+    vertical-align: middle;
+}
+
+// 'draw' our arrows
+.arrow-down span {
+    border-bottom: 5px solid $c-darklemon;
+    border-right: 5px solid $c-darklemon;
+    animation: arrow-down 2s infinite;
+    transform: rotate(45deg);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -16px;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+// Set animation effects 
+
+.arrow-down span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow-down span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: rotate(45deg) translate(-20px, -20px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(45deg) translate(20px, 20px);
+        opacity: 0;
+    }
+}

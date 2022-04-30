@@ -1,0 +1,81 @@
+@mixin f-Archivo-400 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin f-Archivo-700 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@mixin f-Archivo-600 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@mixin f-Montserrat-700-64px {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+@mixin f-Montserrat-700-20px {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@mixin f-mr_apexmk3-400 {
+    font-family: "mr_apexmk3";
+    font-weight: 400;
+    font-size: 48px;
+}
+
+@mixin button-style {
+    border: 1px solid $c-lemon;
+    margin-top: 42px;
+    width: 180px;
+    height: 48px;
+}
+
+@mixin button-href-style {
+    @include f-Archivo-400;
+    color: $c-darklemon;
+    text-align: center;
+    padding: 14px 25px;
+    font-size: 13px;
+    display: block;
+    height: 100%;
+}
+
+
+@mixin works-block-hide-part {
+    padding-right: 15px;
+    padding-left: 15px;
+    position: static;
+    display: block;
+}
+
+@mixin footer-flex-direction {
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+
+}
+
+@mixin media-block-p {
+    @media screen and (max-width:1000px) {
+        padding-top: 34px;
+        padding-bottom: 0;
+    }
+}
+
+@mixin media-block-m {
+    @media screen and (max-width:1000px) {
+        margin-top: 34px;
+    }
+}

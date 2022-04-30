@@ -1,0 +1,58 @@
+include ../elements/hide-price-list
+
+mixin service-block
+    section.service-block
+        .service-block__wrapper.container
+            .service-block__head-content
+                .service-block__subtitle.subtitle #Range
+                h2.service-block__title.title Service catalog
+            .service-block__main-content
+                .service-block__prices
+                    ul.service-block__list 
+                        li.service-block__item 
+                            span.service-block__item-name Men's haircut
+                            .service-block__item-dot
+                            .service-block__item-price $10
+                        li.service-block__item 
+                            .service-block__item-name Haircut under the nozzle
+                            .service-block__item-dot
+                            .service-block__item-price $11
+                        li.service-block__item 
+                            .service-block__item-name Haircut for a boy under 12 years old
+                            .service-block__item-dot
+                            .service-block__item-price $12
+                        li.service-block__item 
+                            .service-block__item-name Haircut mustache and beard
+                            .service-block__item-dot
+                            .service-block__item-price $15
+                        li.service-block__item 
+                            .service-block__item-name Men's haircut + beard haircut
+                            .service-block__item-dot
+                            .service-block__item-price $22
+                        li.service-block__item 
+                            .service-block__item-name Haircut under the nozzle + beard
+                            .service-block__item-dot
+                            .service-block__item-price $30
+                        li.service-block__item 
+                            .service-block__item-name Shaving the head
+                            .service-block__item-dot
+                            .service-block__item-price $35
+                        li.service-block__item 
+                            .service-block__item-name Royal shaving
+                            .service-block__item-dot
+                            .service-block__item-price $50
+                .service-block__img 
+                    img(src="./assets/pic/service-block/img1.png" alt="")
+                    .service-block__subcontent 
+                        h3.service-block__subcontent-title Men's haircut «Crop»  
+                        p.service-block__subcontent-text In style, as in any field, versatility is valued. Perhaps that is why many people are so fond of the Crop haircut. What's so special about her? How is it different from other hairstyles? Where and how did she gain popularity? Let's deal with all the questions in order.  
+            .service-block__hide-button.button-style 
+                a.service-block__href.button-href-style(href="#") Details
+            +hide-price-list()
+            .service-block__hide-button.button-style 
+                a.service-block__href.button-href-style(href="#") Make an appointment 
+
+
+
+
+

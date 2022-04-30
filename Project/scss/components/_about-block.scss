@@ -1,0 +1,167 @@
+//? Main styles of "about"-block
+
+.about-block__icons-list,
+.about-block__part {
+    display: flex;
+}
+
+
+
+// General content indent
+.about-block {
+    margin-top: 130px;
+    @include media-block-m;
+}
+
+.about-block__wrapper {
+    @media screen and (max-width: 600px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+}
+
+//Add text-elements location on about-block 
+.about-block__text-list {
+    color: $c-extra-lightrgray;
+    flex-direction: column;
+
+}
+
+//Change the colors of titles, that has been set as default for all same titles
+
+.about-block__subtitle {
+    color: $c-lemon;
+
+}
+
+//Change the colors of titles, that has been set as default for all same titles
+.about-block__title {
+    color: $c-extra-lightrgray;
+    margin-bottom: 0; // Set none bottom-indent
+}
+
+// Text styles 
+.about-block__descrip {
+    flex-direction: column;
+    text-align: justify;
+    max-width: 700px;
+
+    @media screen and (max-width:1000px) {
+        max-width: 100%;
+
+
+    }
+}
+
+// Add space between main text sections
+
+.about-block__descrip>div:nth-child(2) {
+    margin-top: 15px;
+}
+
+
+// Set indent for icons-section
+
+.about-block__icons-list {
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-top: 10px;
+    margin-top: 60px;
+
+    @media screen and (max-width:1000px) {
+        display: none;
+
+    }
+
+}
+
+//Icons card styles
+
+.about-block__icons-item {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.about-block__icons-item:hover .about-block__icons-title {
+    color: $c-lemon;
+}
+
+// Styles of text title icons - section 
+.about-block__icons-title {
+    color: $c-extra-lightrgray;
+    text-transform: uppercase;
+    @include f-Archivo-400;
+}
+
+
+// Picture size
+.about-block__img {
+
+    @media screen and (max-width:1000px) {
+        display: none;
+    }
+}
+
+// Media changes with block img 
+
+.about-block__img.h-hide {
+
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+// Main content styles 
+
+.about-block__main-content {
+    justify-content: space-between;
+    margin-top: 50px;
+    display: flex;
+    gap: 160px;
+
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
+
+}
+
+// Set styles for the text part of block 
+
+.about-block__text-block {
+    flex-direction: column;
+    display: flex;
+}
+
+// Styles for the media-shows block subtitle and text description 
+
+.about-block__hidden-subtitle {
+    margin-top: 50px;
+    display: none;
+
+    @media screen and (max-width:600px) {
+
+        display: block;
+    }
+}
+
+.about-block__hidden-descrip {
+    text-align: center;
+    display: none;
+
+    @media screen and (max-width:600px) {
+
+        display: block;
+
+    }
+}

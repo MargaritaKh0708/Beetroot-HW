@@ -1,0 +1,92 @@
+.service-block__hide-prices {
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    // Adaptive changes
+    @media screen and (min-width:1330px) {
+        display: none;
+    }
+
+    // Adaptive changes
+    @media screen and (max-width:380px) {
+        gap: 6px;
+    }
+}
+
+.label {
+    align-items: center;
+    display: flex;
+    gap: 30px; // Radio and text on one level
+
+    @media screen and (max-width:1330px) {
+        padding-left: 20px;
+
+    }
+}
+
+.label:hover {
+    background-color: $c-lemon-opacity;
+}
+
+
+.radio-field {
+    display: none; // Hide real button to castomize it 
+}
+
+.label__fake {
+    border: solid 1px $c-darklemon; // Create fake button insted of real one 
+    display: inline-block;
+    background: $c-white;
+    position: relative;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+
+
+}
+
+.label__fake::before {
+    transform: translate(-50%, -50%); // Create a fake choose-point for radio button...
+    background: $c-darklemon;
+    border-radius: 50%;
+    position: absolute;
+    transition: .5s;
+    display: block;
+    content: "";
+    height: 7px;
+    width: 7px;
+    opacity: 0; //.. and hide it 
+    left: 50%;
+    top: 50%;
+
+}
+
+.label__text {
+    @include f-Archivo-400;
+    align-items: baseline;
+    padding-bottom: 5px;
+    color: $c-darkgray;
+    line-height: 30px;
+    padding-top: 5px;
+    cursor: pointer;
+    font-size: 24px;
+
+
+    @media screen and (max-width:600px) {
+        font-size: 18px
+    }
+
+}
+
+.radio-field:checked+.label__fake::before {
+    // when the radio button is checked we'll see the fake button with the fake choose-point
+    opacity: 1;
+}
+
+.radio-field:checked+.label:hover {
+    color: $c-darklemon;
+    background-color: $c-darklemon;
+}
