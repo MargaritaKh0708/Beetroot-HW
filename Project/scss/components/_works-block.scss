@@ -2,9 +2,10 @@
 
 .works-block {
     @include media-block-m;
-    background: $c-black;
     margin-top: 94px;
     max-width: 100%;
+
+
 
 }
 
@@ -30,6 +31,7 @@
 .works-block__gallery {
     justify-content: center;
     flex-direction: column;
+    background: $c-black;
     align-items: center;
     display: flex;
     gap: 10px;

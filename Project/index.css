@@ -1184,7 +1184,6 @@ header {
 }
 
 .works-block {
-  background: #000;
   margin-top: 94px;
   max-width: 100%;
 }
@@ -1222,6 +1221,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
