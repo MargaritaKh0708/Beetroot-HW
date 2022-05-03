@@ -14,9 +14,9 @@ const addNewWish = () => {
             const newWishName = document.createElement('span');
             const deleteButton = document.createElement('button');
             const newDiv = document.createElement('div');
-            newWishName.classList.add('wish-item');
-            deleteButton.classList.add('wish-delete-button');
-            newDiv.classList.add('wish-item-block');
+            newWishName.classList.add('js-wish-item');
+            deleteButton.classList.add('js-wish-delete-button');
+            newDiv.classList.add('js-wish-item-block');
 
             wishList.append(newDiv);
             newDiv.append(newWishName);
@@ -64,8 +64,8 @@ wishAddButton.addEventListener('click', addNewWish);
 
 
 //! Try all methods 
-console.log(wishList.querySelector('.wish-item-block')); // Return first elemet of Parent "wishList"
-console.log(document.querySelectorAll('.wish-item-block')); // Return array of all elements with ".wish-item-block" class
+console.log(wishList.querySelector('.js-wish-item-block')); // Return first elemet of Parent "wishList"
+console.log(document.querySelectorAll('.js-wish-item-block')); // Return array of all elements with ".wish-item-block" class
 console.log(document.querySelectorAll('*')); // Return array of all HTML elements
 console.log(document.getElementsByName('js-container')); // Return array of all elements with such Name
 console.log(wishList.getElementsByTagName('div')); // Return HTMLCollection with all div elements in wishList
