@@ -8,28 +8,28 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./assets/fonts/mr_apex/Montserrat-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/monserrat/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ArchivoNarrow";
-  src: url("./assets/fonts/mr_apex/ArchivoNarrow-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/archivo_narrow/ArchivoNarrow-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ArchivoNarrow";
-  src: url("./assets/fonts/mr_apex/ArchivoNarrow-SemiBold.ttf") format("truetype");
+  src: url("./assets/fonts/archivo_narrow/ArchivoNarrow-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ArchivoNarrow";
-  src: url("./assets/fonts/mr_apex/ArchivoNarrow-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/archivo_narrow/ArchivoNarrow-Medium.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -193,11 +193,10 @@ ul {
 }
 
 header {
-  background-color: #1e1e1a;
+  background-color: #38383880;
   padding-bottom: 20px;
   padding-top: 40px;
   position: fixed;
-  opacity: 0.5;
   z-index: 99;
   right: 0;
   left: 0;

@@ -1,11 +1,10 @@
 //! Main header styles 
 
 header {
-    background-color: $c-black-gold;
+    background-color: $c-header-color;
     padding-bottom: 20px;
     padding-top: 40px;
     position: fixed;
-    opacity: 0.5;
     z-index: 99;
     right: 0;
     left: 0;
