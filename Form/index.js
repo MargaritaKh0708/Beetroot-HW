@@ -1,48 +1,5 @@
 
-const URL = 'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
-
-// document.getElementById('js-submit').addEventListener('click', (event) => {
-//     event.preventDefault()
-//     const body = {
-//         role: 2,
-//         firstName: document.getElementById('js-firstName').value,
-//         lastName: document.getElementById('js-lastName').value,
-//         email: document.getElementById('js-email').value,
-//         userName: document.getElementById('js-userName').value,
-//         password: document.getElementById('js-password').value,
-//         disabledSeasonAnimation: true,
-//         language: 'eng'
-//     }
-//     console.log(body)
-//     const headers = {
-//         'Content-Type': 'application/json'
-//     }
-//     return fetch(URL, {
-//         method: 'POST',
-//         body: JSON.stringify(body),
-//         headers: headers,
-//     }).then(response => {
-//         if (response.ok)
-//             return response.json()
-//         else
-//             return response.json().then(error => {
-//                 console.error(error.message.en)
-//                 throw new Error(error.message.en)
-//             })
-//     }).then(data => console.log('This is your data:', data))
-
-// })
-
-
-
-// //! Validation
-
-
-
-
 const usersUrl = 'https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration';
-
-// const usersUrl = 'https://jsonplaceholder.typicode.com/users';
 
 // //! Fetch
 
