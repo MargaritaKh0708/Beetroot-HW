@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="./fonts/icon/style.css" rel="stylesheet">
+
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class='form' action="#" method="post">
+            <h2 class="form__tittle">Registration form</h2>
+            <div class=' personal-data data'>
+                <label class="firstName">
+                    <span class="firstName__discription discription"> First name </span>
+                    <input type="text" class="firstName__field" id='js-firstName' required>
+                </label>
+                <label class="lastName">
+                    <span class="email__discription discription">Last name</span>
+                    <input type="text" class="lastName__field" id='js-lastName' required>
+                </label>
+                <label class="email">
+                    <span class="email__discription discription" id="js-span"> E - mail </span>
+                    <input type="email" class="email__field" id='js-email' required>
+
+                </label>
+            </div>
+            <div class="regisration-data data">
+                <label class="username">
+                    <span class="username__discription discription"> User name </span>
+                    <input type="text" class="userName__field h-width" id='js-userName' required>
+
+                </label>
+
+                <label class="password">
+                    <span class="password__discription discription"> Password </span>
+                    <input type="password" autocomplete="current-password" class="password__field h-width"
+                        id='js-password' required>
+                    <span class="icon-eye-blocked" id='js-eye'></span>
+                </label>
+            </div>
+            <button data-modal-btn='my-modal1' type="submit" id="js-submit" class='submit'>
+                <span> register </span>
+            </button>
+            <div data-modal-window="my-modal1" class="modal">
+                <div class="modal__content">
+                    <div class="modal__inner">
+                        <div class="modal__title" id="js-modal-title">👎</div>
+                        <div class="close__modal-window">&times;</div>
+                    </div>
+                    <p id="js-modal-msg"> </p>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- role
+firstName
+lastName
+email
+username
+password
+disabledSeasonAnimation
+language -->
