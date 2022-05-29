@@ -42,6 +42,26 @@ ul {
     }
 }
 
+.more-special-group {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+.more-special-group.h-hide {
+    @media screen and (max-width: 680px) {
+        display: block;
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.js-more-special-group {
+    transform: translateY(-100px);
+    transition: 2s;
+    opacity: 1;
+}
+
 .logo {
     display: flex;
     height: 116px;
@@ -91,10 +111,20 @@ ul {
 
 .button-style {
     @include button-style;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
 }
 
 .button-href-style {
     @include button-href-style;
+}
+
+.button-style:hover {
+    background: #bccd90;
+    color: $c-black-gold;
+    transition: 1s;
 }
 
 .descrip-style {
@@ -112,6 +142,15 @@ ul {
         width: auto;
     }
 }
+
+.href {
+    text-transform: uppercase;
+    @include f-Archivo-400;
+    letter-spacing: 6px;
+    padding: 5px 2px;
+    color: $c-lemon;
+}
+
 
 //Helpers
 

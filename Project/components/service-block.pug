@@ -2,7 +2,7 @@ include ../elements/hide-price-list
 
 mixin service-block
     section.service-block
-        .service-block__wrapper.container
+        #services.service-block__wrapper.container
             .service-block__head-content
                 .service-block__subtitle.subtitle #Range
                 h2.service-block__title.title Service catalog
@@ -50,7 +50,7 @@ mixin service-block
                 a.service-block__href.button-href-style(href="#") Details
             +hide-price-list()
             .service-block__hide-button.button-style 
-                a.service-block__href.button-href-style(href="#") Make an appointment 
+                a.service-block__href.button-href-style(href="#contacts") Make an appointment 
 
 
 

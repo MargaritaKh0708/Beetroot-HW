@@ -9,15 +9,14 @@ html(lang="en")
         .app
             +header()
             +presentation-block()
-            +service-block()
-            +about-block()
-            +staff-block()
-            +works-block()
-            +reviews-block()
-            +map-block()
-            +footer()
-
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            #more-special-group.more-special-group.h-hide
+                +service-block()
+                +about-block()
+                +staff-block()
+                +works-block()
+                +reviews-block()
+                +map-block()
+                +footer()
         script 
             include index.js
 

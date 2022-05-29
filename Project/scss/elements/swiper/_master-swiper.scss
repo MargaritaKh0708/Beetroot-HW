@@ -1,9 +1,20 @@
 //! Main slider styles 
 
+
+.mySwiper {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
 .slider-container {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+
+    @media screen and (max-width: 1200px) {
+        max-width: 600px;
+    }
 }
 
 .staff-block__slider-img {
@@ -11,15 +22,55 @@
 }
 
 .staff-block__slider-card-descrip {
-    opacity: 1;
-    top: 60%;
+    opacity: 0; //!!
+    top: 36%;
+
 
     // Adaptive changes 
     @media screen and (max-width: 500px) {
         padding: 0 10px;
         top: 52%;
     }
+
+    @media screen and (max-width: 1200px) {
+        opacity: 1; //!!
+        top: 55%;
+    }
+
+
 }
+
+.staff-block__slider-card:hover img {
+    transition: 1s;
+    opacity: 0;
+
+    @media screen and (max-width: 1200px) {
+        opacity: 1;
+    }
+}
+
+.staff-block__slider-card:hover .staff-block__slider-card-descrip {
+    transition: 1s;
+    opacity: 1;
+
+}
+
+.staff-block__slider-card-descrip:hover .staff-block__slider-reserve {
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.staff-block__slider-card:hover {
+    transition: 0.5s;
+}
+
+
+.staff-block__slider-img {
+    background-size: cover;
+    height: 532px;
+    width: 386px;
+}
+
 
 .staff-block__slider-descrip {
 
@@ -53,4 +104,17 @@
 .swiper-button-next,
 .swiper-button-prev {
     color: $c-lemon;
+}
+
+
+
+// Mini-swiper
+
+.master-mini-slider {
+    max-width: 500px;
+    display: none;
+
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
 }

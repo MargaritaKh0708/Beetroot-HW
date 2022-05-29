@@ -1,0 +1,25 @@
+mixin modal
+    .modal(data-modal-window='my-modal1')
+        #js-modal-content.modal__content
+            .modal__inner
+                a.modal__logo.logo(href="#")
+                    img(src="./assets/pic/logo.svg" alt="")
+                //- #js-modal-title.modal__title.href MENU 
+                .modal__close &times;
+            p#js-modal-msg
+            ul.modal__item-list
+                li.modal_item
+                    a.modal__href.href(href="#") Services
+                li.modal_item
+                    a.modal__href.href(href="#") Masters
+                li.modal__item
+                    a.modal__href.href(href="#") Product
+                li.modal_item
+                    a.modal__href.href(href="#") Contacts
+            .modal__social.presentation-block__social
+                .modal__social-item.presentation-block__social-item 
+                    a.presentation-block__social-href(href="https://www.facebook.com/") facebook
+                .modal__social-item.presentation-block__social-item 
+                    a.presentation-block__social-href(href="https://www.youtube.com/") youtube
+                .modal__social-item.presentation-block__social-item 
+                    a.presentation-block__social-href(href="https://www.instagram.com/") instagram

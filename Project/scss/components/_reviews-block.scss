@@ -16,6 +16,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-left: 30px;
     display: flex;
 
     // Adaptive changes 
@@ -30,6 +31,7 @@
         align-items: flex-start;
         flex-direction: column;
         background-size: cover;
+        margin-left: 0;
         height: 360px;
     }
 }
@@ -74,7 +76,7 @@
 .reviews-block__icon {
     position: absolute;
     width: 108px;
-    left: -2%;
+    left: -1%;
     top: 8%;
 
     // Adaptive changes 
@@ -119,6 +121,7 @@
     @media screen and (max-width:450px) {
         color: $c-extra-lightrgray;
         max-width: 300px;
+        left: 20px;
     }
 
     // Adaptive changes 

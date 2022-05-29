@@ -2,22 +2,18 @@
 
 .map-block__form-part {
     background-color: $c-white;
+    position: relative;
     margin-left: auto;
     margin-top: 180px;
-    max-width: 590px;
+    width: 590px;
 
     // Adaptive changes
     @media screen and (max-width:1000px) {
-        margin-right: auto;
-        margin-top: 0;
-    }
-}
-
-.map-block__form-part:nth-last-of-type(2) {
-
-    // Adaptive changes
-    @media screen and (max-width:1000px) {
-        display: none;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 }
 
@@ -88,7 +84,7 @@
 }
 
 .map-block__form-checkbox-fake {
-    border: solid 1px $c-gray; // Create fake button insted of real one 
+    border: 1px solid $c-gray; // Create fake button insted of real one 
     display: inline-block;
     background: $c-white;
     position: relative;
@@ -138,4 +134,22 @@
     @media screen and (max-width:1000px) {
         margin-top: 30px;
     }
+}
+
+
+//JS-classes
+
+.error {
+    border-bottom: 1px solid $c-lemon;
+}
+
+.form-error {
+    @include f-Archivo-400;
+    font-size: 12px;
+    padding: 2px;
+    height: 10px;
+}
+
+.error-chek {
+    border-color: red;
 }

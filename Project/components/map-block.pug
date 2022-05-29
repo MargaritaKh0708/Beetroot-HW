@@ -1,16 +1,14 @@
 include ../elements/map-form
-include ../elements/map-form-mini
 
 
 mixin map-block 
-    section.map-block 
+    section#contacts.map-block 
         .map-block__main-content.container 
+            #map.map__google
             .map-block__contacts
-                p.map-block__descrip.descrip-style Old Town, Central str. 112 
-                p.map-block__descrip.descrip-style.h-margintop 0 800 12-12-121 
-                p.map-block__descrip.descrip-style 0 99 12-12-121
+                p.map-block__descrip.descrip-style Old Town, Central str. 112
+                a.map-block__descrip.descrip-style.h-margintop(href='tel:0 800 12-12-121') 0 800 12-12-121 
+                a.map-block__descrip.descrip-style(href='tel:0 99 12-12-121') 0 99 12-12-121
             +map-form
-            .map-block__location
-                span.icon-location_on
-        .map-block__hide-part
-            +map-form-mini               
+
+

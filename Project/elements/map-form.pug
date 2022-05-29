@@ -2,10 +2,12 @@ mixin map-form
     .map-block__form-part
         form.map-block__form(action="#" method="post")
             h3.map-block__form-title create your unique STYLE
-            input.map-block__form-input(type="text" name='userName' id='userName' placeholder='Name')
-            input.map-block__form-input(type='text' name='userNumber' id='userNumber' placeholder='Number')
-            .map-block__form-button.button-style
-                a.map-block__form-href.button-href-style(href="#") Make an appointment 
+            input.map-block__form-input.check(type="text" name='userName' id='js-user-name' placeholder='Name')
+            span#js-name-error.form-error(aria-live="polite")
+            input.map-block__form-input.check(type='tel' name='userNumber' id='js-user-number' placeholder='Number' required minlength="12")
+            span#js-phone-error.form-error(aria-live="polite")
+            button.map-block__form-button.button-style(type='submit' id='js-btn')
+                span.map-block__form-href.button-href-style Make an appointment 
             label.map-block__form-label(for="userConfirm")
                 input.map-block__form-checkbox(type='checkbox' name='Confirm' id='userConfirm' checked)
                 span.map-block__form-checkbox-fake

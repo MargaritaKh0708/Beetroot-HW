@@ -5,34 +5,48 @@
 
     // Adaptive changes 
     @media screen and (max-width: 1280px) {
+        position: absolute;
         display: block;
+        right: 20px;
     }
 }
 
+
 .burger {
+    background: content-box;
+    pointer-events: visible;
     flex-direction: column;
     border-radius: 5px;
     cursor: pointer;
+    transition: 1s;
     padding: 10px;
     display: flex;
     border: none;
+    opacity: 1;
+
+    &__event {
+        pointer-events: none;
+
+        opacity: 0;
+    }
 }
 
 // Hover effect
 
-.burger:hover {
-    background-color: $c-black-gold;
+.burger:hover span {
+    background-color: $c-darklemon;
     transition: .5s;
 }
 
 .burger span {
-    background-color: $c-darklemon;
+    background-color: $c-lemon;
     display: inline-block;
     margin-bottom: 5px;
     border-radius: 3px;
-    width: 30px;
-    height: 3px;
+    width: 22px;
+    height: 2px;
 }
+
 
 .burger span:last-child {
     margin-bottom: 0;

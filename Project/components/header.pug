@@ -1,20 +1,22 @@
 include ../elements/burger
+include ./modal-window
 
 mixin header 
-    header.header
+    header#js-header.header
         .header__wrapper.container 
             nav.navigation
                 ul.navigation__list
                     li.navigation__item
-                        a.navigation__href(href="#") Services
+                        a.navigation__href.href(href="#services") Services
                     li.navigation__item
-                        a.navigation__href(href="#") Masters
+                        a.navigation__href.href(href="#masters") Masters
                     li.navigation__item
                         a.header__logo.logo(href="#")
                             img(src="./assets/pic/logo.svg" alt="")
                     li.navigation__item
-                        a.navigation__href(href="#") Product
+                        a.navigation__href.href(href="#works") Product
                     li.navigation__item
-                        a.navigation__href(href="#") Contacts
+                        a.navigation__href.href(href="#contacts") Contacts
             +burger()
+            +modal()
 

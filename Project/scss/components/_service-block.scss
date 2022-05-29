@@ -126,6 +126,7 @@
 
 .service-block__subcontent {
     background-color: $c-white;
+    pointer-events: none;
     text-align: justify;
     padding-right: 30px;
     color: $c-darkgray;

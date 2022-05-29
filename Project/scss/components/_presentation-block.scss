@@ -1,19 +1,30 @@
 //! Main block styles
 
 .presentation-block {
-    margin-top: 328px;
+    padding-top: 328px;
     width: 100%;
+    background: url(./assets/pic/main-man.png) no-repeat;
+    background-size: contain;
+    background-position: top right;
 
 
     // Adaptive changes 
+    @media screen and (max-width:930px) {
+        background-position: initial;
+        background-size: cover;
+    }
+
     @media screen and (max-width:600px) {
-        margin-top: 200px;
+        padding-top: 266px;
+    }
+
+    @media screen and (max-width:359px) {
+        padding-top: 200px;
     }
 }
 
 .presentation-block__wrapper {
     padding-bottom: 20px;
-    position: relative;
 
     // Adaptive changes 
     @media screen and (max-width:600px) {
@@ -71,7 +82,9 @@
 // Set styles for the adress part 
 
 .presentation-block__contacts {
+    flex-direction: column;
     margin-top: 166px;
+    display: flex;
 
     // Adaptive changes 
     @media screen and (max-width:600px) {
@@ -87,6 +100,11 @@
     margin-top: 102px;
     display: flex;
     gap: 67px;
+
+    // Adaptive changes 
+    @media screen and (max-width:1280px) {
+        display: none;
+    }
 }
 
 .presentation-block__social-item {
@@ -112,13 +130,16 @@
 // Block Bottoms styles
 
 .presentation-block__bottom {
+    justify-content: space-between;
     align-items: flex-end;
     display: flex;
+    width: 60%;
     gap: 260px;
 
     // Adaptive changes 
-    @media screen and (max-width:1024px) {
-        display: none;
+    @media screen and (max-width:1280px) {
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -132,7 +153,7 @@
     gap: 10px;
 
     // Adaptive changes 
-    @media screen and (max-width:1280px) {
+    @media screen and (max-width: 680px) {
         display: none;
     }
 }
@@ -140,16 +161,7 @@
 .presentation-block__more-text {
     @include f-Archivo-600;
     letter-spacing: 10px;
+    width: fit-content;
+    text-align: center;
     color: $c-light;
-
-}
-
-.presentation-block__img {
-    position: absolute;
-    overflow: hidden;
-    height: 1134px;
-    width: 1054px;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
 }
